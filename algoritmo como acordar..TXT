@@ -1,0 +1,10 @@
+Alg. como acordar.
+    
+            1- Acordo;
+2- Abro os olhos;
+3- Ponho o óculos;
+4- Levanto;
+5- Calço o chinelo;
+6- Escovo os dentes;
+...
+}
