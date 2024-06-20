@@ -2,21 +2,19 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.atividade_mod30.exceptions;
+package DAO;
 
 /**
  *
  * @author gabri
  */
+public class Persistence {
+  public interface Persistente {
 
-    public class TableException extends Exception {
-
+    //public Long getCodigo();
 	
-	private static final long serialVersionUID = -7509649433607067138L;
-
-	public TableException(String msg) {
-		super(msg);
-    }
-
-}
+	public Long getId();
+	
+	public void setId(Long id);
+}  
 }
