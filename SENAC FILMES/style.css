@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bg-principal: #111;
+    --bg-secundario: #2D2D2D;
+    --cor-destaque: #E08E00;
+    --font-color-principal: #FFF;
+    --font-titulo: 'Bebas Neue', cursive;
+    --font-destaque: 'Montserrat', sans-serif;
+    --font-principal: 'Roboto', sans-serif;
+    font-size: 10px;
+}
+
+body{
+    background-color: var(--bg-principal);
+    color: var(--font-color-principal) ;
+    font-family: var(--font-principal);
+}
+
+a{
+    color: var(--font-principal);
+    text-decoration: none;
+}
+#icon{
+   
+    width: 32px;
+    height:36px;
+    margin-left: 14px;
+    margin-right: 4px;
+}
+
+header{
+    display: flex;
+    background-color: var(--bg-secundario);
+    align-items: center;
+    
+
+}
+
+h1{
+    color: var(--cor-destaque);
+    text-transform: uppercase;
+    font-family: var(--font-titulo);
+    font-size: 4.8rem;
+}
+    
+nav li{
+    list-style: none;
+    margin: 0 2rem;
+    font-size: 1.8rem;
+    
+    
+}
+
+nav ul{
+    display: flex;
+    
+}
+
+#hero{
+    height: 25rem;
+    width: 100%;
+    position: relative;
+    transform: scale();
+}
+#hero::before{
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-image: url(https://image.tmdb.org/t/p/original/bsNm9z2TJfe0WO3RedPGWQ8mG1X.jpg );
+    position: absolute;
+    background-size: cover;
+    background-position-y: 20%;
+    background-position-x: 12%;
+
+    filter:opacity(.4);
+    z-index: -1;
+    box-shadow: inset 0 -8px 100px var(--bg-principal);
+    transform: scale(2);
+    animation: zoom 6s;
+}
+@keyframes zoom {
+    0%{
+        transform: scale(1.5);
+    }
+        100%{
+            transform: scale(2);   
+        }
+}
+#hero p{
+    font-size: 3.0rem;
+    font-family: var(--font-destaque);
+    padding-left: 4.8rem;
+    padding-top: 2.0rem;
+    text-shadow: 2px 2px 2px #0c214e;
+} 
+#search-bar {
+    position: relative;
+    width: 60%; /* Largura da barra de pesquisa */
+    padding: 10px; /* Espaçamento interno da barra de pesquisa */
+    font-size: 16px; /* Tamanho da fonte */
+    border: 1px solid #ccc; /* Borda da barra de pesquisa */
+    border-radius: 25px; /* Bordas arredondadas */
+    outline: none; /* Remove o contorno ao clicar */
+    margin-top: 80px; /* Espaço acima da barra de pesquisa */
+    margin-right: 50px;
+    transition: border-color 0.3s ease; /* Animação suave para borda */
+}
+#search-bar:focus {
+    border-color: #007BFF; /* Cor da borda ao focar */
+}
+
+#search-button {
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    background-color: #007BFF; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 25px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor ao passar sobre o botão */
+    margin-left: 10px; /* Espaço entre a barra de pesquisa e o botão */
+    margin-right: 50px;
+    transition: background-color 0.3s ease; /* Animação suave para cor de fundo */
+}
+
+#search-button:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+h2{
+    font-size: 1.8rem;
+    font-family: var(--font-principal);
+    font-weight: 700;
+    border-left: 4px solid var(--cor-destaque);
+    margin: 1.6rem;
+    padding-left: 4rem;
+}
+.secao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.card{
+    width: 180px;
+    background-color: var(--bg-secundario);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    position: relative;
+
+
+}
+.card .icone-favorito{
+    position: absolute;
+    font-size: 2rem;
+    right: 1rem;
+    text-shadow: 2px 2px 2px #000;
+    filter: opacity(0);
+}
+.card img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    transition: filter .5s;
+
+}
+.card:hover .icone-favorito{
+    filter: opacity(1);
+    transition: .5s;
+}
+.card img:hover{
+    filter: opacity(.7);
+}
+.card p:first-of-type{
+    font-size: 1.6rem;
+    font-family: var(--font-principal);
+    font-weight: bold;
+    margin-top: .5rem;
+    
+}
+.card p:nth-of-type(2){
+    font-size: 1.6rem;
+    filter: blur(.8);
+    margin-top: .5rem;
+}
+.botao{
+    background-color: var(--cor-destaque);
+    font-size: 1.4rem;
+    border-radius: 5px;
+    padding: .5rem 2rem;
+    margin-top: 1rem;
+    transition: box-shadow .5s ease-in-out;
+}
+.botao:hover{
+    background-color: aqua;
+    box-shadow:  0px 0px 8px  #FFF;
+}
+@media(max-width: 425px) {
+    header{
+        flex-direction: column;
+    }
+}
+

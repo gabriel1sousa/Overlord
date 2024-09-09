@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bg-principal: #111;
+    --bg-secundario: #2D2D2D;
+    --cor-destaque: #E08E00;
+    --cor-botao: #FF0066;
+    --font-color-principal: #FFF;
+    --font-titulo: 'Bebas Neue', cursive;
+    --font-destaque: 'Montserrat', sans-serif;
+    --font-principal: 'Roboto', sans-serif;
+    font-size: 10px;
+}
+body{
+    background-color: var(--bg-principal);
+    color: var(--font-color-principal) ;
+    font-family: var(--font-principal);
+}
+a{
+    color: var(--font-principal);
+    text-decoration: none;
+}
+header{
+    display: flex;
+    background-color: var(--bg-secundario);
+    align-items: center;
+    margin-right: 10px;
+    
+}
+#icon{
+   
+    width: 32px;
+    height:36px;
+    margin-left: 14px;
+    margin-right: 4px;
+}
+nav li{
+    list-style: none;
+    margin: 0 2rem;
+    font-size: 1.8rem;
+    
+    
+    
+}nav ul{
+    display: flex;
+    
+    
+}
+h1{
+    color: var(--cor-destaque);
+    text-transform: uppercase;
+    font-family: var(--font-titulo);
+    font-size: 4.8rem;
+}
+h2{
+   
+    font-size: 1.8rem;
+    font-family: var(--font-principal);
+    font-weight: 700;
+    border-left: 4px solid var(--cor-botao);
+    border-width: 4px;
+    margin: 35px 0px 0px 30px;
+    padding: 5px 0px 5px 0px;
+}
+.plano_de_fundo{
+    width: 100%;
+    height: 45rem;
+    content: '';
+    background-image:linear-gradient(to bottom, transparent 0%, var(--bg-principal)70%), url(https://www.themoviedb.org/t/p/original/54PmeEzQMvpojpJBku61ZGQnWUX.jpg);
+    position: absolute;
+    background-size: cover;
+    background-position-y: 20%;
+    background-position-x: 12%;
+
+
+}
+
+.div_pri{
+    display: flex;
+    flex-direction: row;
+   
+
+    
+    
+}
+
+#hero{
+    display: flex;
+    font-size: 36px;
+    font-family: var(--font-destaque);
+    margin-bottom: 31px;
+    text-shadow: 2px 2px 2px #111;
+    text-align: end;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: scale();
+}
+
+
+.sinopse{
+    
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-family: var(--font-principal);
+    font-weight: 700;
+    line-height: 16.41px;
+   
+    width: 534px;
+    height: 155px;
+    left: 211px;
+    top: 164px;
+    margin: 31px 155px 34px 15px;
+    padding: 5px 0px 5px 0px;
+
+}
+#sinopse{
+    color: #CCCCCC;
+}
+#botao{
+    
+    background-color: var(--cor-botao);
+    font-family: var(--font-principal);
+    font-size: 16px;
+    border-radius: 5px;
+    transition: box-shadow .5s ease-in-out;
+    width: 106px;
+    height: 19px;
+    left: calc(50% - 106px/2 - 367px);
+    top: calc(50% - 19px/2 + 3.5px);
+    text-align: center;
+    letter-spacing: 0.04em; 
+    padding: 6px 0px 6px 0px;
+    margin-right: 22px;
+}
+
+
+.cartaz{
+    
+    margin: 34px 15px 34px 46px;
+    padding: 5px 0px 5px 0px;
+}
+#img_film{
+    border-radius: 5px;
+}
+.div_botao{
+    display: flex;
+    flex-flow: row;
+    margin: 30px 0px 30px 30px;
+}
+
+#bool{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#bool_2{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.secao_elenco{
+    display: flex;
+    flex-wrap: row;
+}
+
+.elenco{
+    width: 143px;
+    height: 165px;
+    border-radius: 5px;
+    background: #2D2D2D;
+    margin-left: 21px;
+    margin-top: 65px;
+    padding: 5px 0px 5px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+#foto_elenco{
+    
+    
+    border: 3px solid #FFFFFF;
+    border-radius: 100%;
+    margin: -40% 21px auto 22px;
+    
+}
+
+.ficha{
+    width: 167px;
+    height: 362px;
+    border-radius: 5px;
+    background: #2D2D2D;
+    text-align: end;
+
+}
+
+.ficha h2{
+    margin: 19px 20px 20px 8.56px;
+    font-size: 1.8rem;
+    font-family: var(--font-principal);
+    font-weight: 700;
+    border-left: 4px solid var(--cor-botao);
+    border-width: 4px;
+}
+
+@media(max-width: 425px) {
+    #boot{
+        flex-direction: column;
+    }
+}
